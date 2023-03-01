@@ -2172,6 +2172,10 @@ input, select, textarea {
 		padding: 5em 0 0 0;
 	}
 
+  .opening-times {
+    max-width: 500px;
+  }
+
 		#content > section:first-child,
 		#content > article:first-child {
 			border-top: 0;
