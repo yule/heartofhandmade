@@ -34,13 +34,6 @@
 
 	// Nav.
 
-		// Title Bar.
-			$(
-				'<div id="titleBar">' +
-					'<a href="#navPanel" class="toggle"></a>' +
-				'</div>'
-			)
-				.appendTo($body);
 
 		// Panel.
 			$(

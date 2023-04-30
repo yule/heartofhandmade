@@ -2662,6 +2662,11 @@ float: left;
 				width: 100%;
 			}
 
+      .side-tab-left, .side-tab-right {
+        width: 100%;
+        padding: 5px;
+      }
+
 		/* Actions */
 
 			ul.actions li {
