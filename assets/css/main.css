@@ -2308,6 +2308,11 @@ float: left;
 	padding-right: 25px
 }
 
+.gmap-container {
+  margin: 20px auto;
+  max-width: 1600px;
+}
+
 
 /* XLarge */
 
