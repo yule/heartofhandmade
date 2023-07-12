@@ -1494,6 +1494,22 @@ input, select, textarea {
 		transition: opacity 0.25s ease-in-out;
 		display: inline-block;
 	}
+  .image-holder {
+    max-width: 400px;
+    margin: 5px;
+    float: left;
+  }
+
+  .image-holder-full {
+    float: left;
+  }
+
+  .image-holder img, .image-holder-full img {
+    width: 100%;
+  }
+  .clear {
+    clear: both;
+  }
 
 		.image:hover {
 			opacity: 0.9;
