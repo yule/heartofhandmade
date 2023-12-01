@@ -212,7 +212,8 @@ input, select, textarea {
   padding: 30px;
   font-size: 2em;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 20px auto;
+
 }
 .party-banner p{
   color: #333;
@@ -223,6 +224,14 @@ input, select, textarea {
 }
 .party-banner p a{
   color: #333 !important;
+}
+
+.party-banner.xmas {
+  background: #BFE5D9;
+}
+
+.party-banner.xmas img {
+  margin-top: 20px;
 }
 
 #testimonials {
