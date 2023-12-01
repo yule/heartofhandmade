@@ -2855,6 +2855,17 @@ float: left;
 					padding: 3em 0 0 0;
 				}
 
+    /* Table */
+    table, thead, tr, td {
+      display: block;
+    }
+    
+    table.workshops tbody tr :first-child {
+      background: #BFE5D9;
+    }
+    table.workshops tbody tr :last-child {
+      border-bottom: 1px dashed grey;
+
 		/* Footer */
 
 			#footer {
