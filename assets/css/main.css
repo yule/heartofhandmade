@@ -2856,15 +2856,21 @@ float: left;
 				}
 
     /* Table */
-    table, thead, tr, td {
+    table.workshops, table.workshops td {
       display: block;
     }
     
     table.workshops tbody tr :first-child {
       background: #BFE5D9;
+      font-weight: bold
     }
     table.workshops tbody tr :last-child {
-      border-bottom: 1px dashed grey;
+      margin-bottom: 10px;
+    }
+
+    table.workshops tbody tr td {
+     padding: 1em 0.2;
+    }
 
 		/* Footer */
 
