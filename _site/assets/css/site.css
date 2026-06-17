@@ -489,7 +489,6 @@ small { font-size: 0.87em; }
   }
   .nav-toggle { display: block; margin-left: auto; }
 
-  .hero { min-height: 480px; }
   .hero-actions { flex-direction: column; align-items: center; }
   .hero-actions .btn { width: 100%; text-align: center; max-width: 320px; }
 
