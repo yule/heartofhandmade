@@ -30,7 +30,12 @@
 </head>
 <body{% if site.announcement_enabled %} class="has-banner"{% endif %}>
 
+  <div class="brand-header">
+    <a href="/"><img src="/images/logos/cropped.png" alt="Heart of Handmade"></a>
+  </div>
+
   {% include nav.html %}
+
   {% include banner.html %}
 
   {{ content }}
