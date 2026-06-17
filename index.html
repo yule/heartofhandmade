@@ -1,248 +1,82 @@
-<!DOCTYPE HTML>
-<!--
-	Strongly Typed by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Heart of Handmade</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-    <meta name="title" content="Heart of Handmade">
-    <meta name="description" content="Unique gift shop in Barnsley town centre offering homemade crafts, art and workshops">
-    <meta name="keywords" content="art,crafts,workshops,gift,gifts,crafting,barnsley,yorkshire,shop,gallery,handmade">
-    <meta name="robots" content="index, follow">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="language" content="English">
-    <link rel="canonical" href="https://heartofhandmade.co.uk">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DFK57F2D10"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+---
+layout: default
+title: Heart of Handmade – Craft Shop & Workshops in Barnsley
+description: Unique gift shop in Barnsley town centre offering homemade crafts, art and workshops
+---
 
-      gtag('config', 'G-DFK57F2D10');
-    </script>
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-		<link rel="manifest" href="/site.webmanifest">
-	</head>
+<!-- Hero -->
+<section class="hero" aria-label="Welcome">
+  <img class="hero-bg" src="/images/main.jpg" alt="Inside Heart of Handmade">
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="hero-body">
+    <h1>Heart of<br>Handmade</h1>
+    <p class="hero-tagline">Offering craft classes and selling unique handmade items and original art, heart of handmade is a must-see place to visit in Barnsley.</p>
+    <div class="hero-actions">
+      <a href="/workshops.html" class="btn btn-primary">Book a Workshop</a>
+      {% if site.shop_enabled %}
+        <a href="/shop.html" class="btn btn-outline">Browse the Shop</a>
+      {% else %}
+        <span class="btn btn-outline" style="opacity:0.6;cursor:default">Online shop coming soon</span>
+      {% endif %}
+    </div>
+  </div>
+</section>
 
-	<body class="no-sidebar is-preload">
+<!-- What we offer -->
+<section class="section" id="what-we-offer">
+  <div class="container">
+    <div class="cards-grid">
+      <div class="card">
+        <img class="card-img" src="/images/workshop.jpeg" alt="Craft workshop in progress">
+        <div class="card-body">
+          <h3>Workshops</h3>
+          <p>Come and learn a new craft, or master an old one! We have regular workshops run by some of our talented makers.</p>
+          <p>There's plenty on offer, from crochet and sewing to wax painting, ceramics and fused glass making.</p>
+          <a href="/workshops.html" class="btn btn-bordered btn-sm">View Workshops</a>
+        </div>
+      </div>
+      {% if site.shop_enabled %}
+      <div class="card">
+        <img class="card-img" src="/images/shop-front.jpeg" alt="Inside the Heart of Handmade shop">
+        <div class="card-body">
+          <h3>Shop</h3>
+          <p>Stocking items from more than 30 different makers, we offer something for everyone.</p>
+          <p>Pick up some original art, handmade jewellery or unique gifts for those special occasions.</p>
+          <a href="/shop.html" class="btn btn-bordered btn-sm">Visit the Shop</a>
+        </div>
+      </div>
+      {% endif %}
+      <div class="card">
+        <img class="card-img" src="/images/sell.jpeg" alt="Handmade items on display">
+        <div class="card-body">
+          <h3>Sell</h3>
+          <p>We're always happy to welcome new artists and makers, so if you're looking for a place to stock and sell your work then contact us for an information pack.</p>
+          <a href="mailto:heartofhandmadebarnsley@yahoo.com" class="btn btn-bordered btn-sm">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-		<div id="page-wrapper">
+<!-- Private parties CTA -->
+<section class="cta-banner">
+  <div class="container">
+    <p>We can now take bookings for private craft parties.<br>
+    <a href="mailto:heartofhandmadebarnsley@yahoo.com" class="btn btn-dark" style="margin-top:1rem">Get in touch</a> to find out more!</p>
+  </div>
+</section>
 
-			<!-- Header -->
-				<section id="header">
-          <div class="logo">
-            <img src="images/logos/cropped.png" alt="logo" width="30%"/>
-          </div>
-					<div class="container">
-           <img src="images/shop-front.jpeg" width="50%" alt="shop front"/>
-                  <p>Offering craft classes and selling unique handmade
-                  items and original art, heart of handmade is a must-see place to visit in Barnsley.</p>
-
-
-					</div>
-				</section>
-        <div class="clear"><!-- --></div>
-
-			<!-- Main -->
-				<section id="main">
-					<div class="container">
-            <div class="party-banner">
-              <p>We can now take bookings for private craft parties. 
-              <br/>
-              <a href="mailto:heartofhandmadebarnsley@yahoo.com">Get in touch</a> to find out more!</p>
-            </div>
-
-						<div id="content">
-							<!-- Post -->
-								<article class="box post">
-									<!-- experiment -->
-									<div class="tabs-wrapper">
-                      
-                      <div class="clear"><!-- --></div>
-											<div class="tabs">
-												<div role="tablist" aria-label="What we offer">
-													<button role="tab" aria-selected="true" id="learn">Workshops</button>
-													<button role="tab" aria-selected="false" id="shop">Shop</button>
-													<button role="tab" aria-selected="false" id="sell">Sell</button>
-												</div>
-                        <div role="tabpanel" aria-labelledby="shop" hidden>
-													<h3>Shop</h3>
-													<div class="side-tab-left">
-														<p>Stocking items from more than 30 different makers, we offer something for everyone.<p>
-														<p>Pick up some original art, handmade jewellery or unique gifts for those special occasions.</p>
-													</div>
-													<div class="side-tab-right">
-														<img src="images/shop-inside.jpeg" alt="inside shop" width="100%"/>
-													</div>
-												</div>
-												<div role="tabpanel" aria-labelledby="sell" hidden>
-													<h3>Sell</h3>
-													<div class="side-tab-left">
-														<p>We're always happy to welcome new artists and makers, so if you're looking for a place to
-														stock and sell your work then contact us for an information pack.</p>
-													</div>
-													<div class="side-tab-right">
-														<img src="images/sell.jpeg" alt="inside shop" width="100%"/>
-													</div>
-												</div>
-												<div role="tabpanel" aria-labelledby="learn">
-													<h3>Workshops</h3>
-													<div class="side-tab-left">
-														<p>Come and learn a new craft, or master an old one! We have regular
-														workshops run by some of our talented makers.</p>
-														<p>There's plenty on offer, from crochet and sewing to wax painting, ceramics and fused glass making.</p>
-                            <h4>Looking for the perfect gift?</h4>
-                            <p>You can also 
-                            <a href="https://bookeo.com/go/42554WYMY6K18ED2B127DD/buyvoucher" target="_top">
-                              <strong>
-                              buy gift vouchers online
-                              </strong>
-                            </a>
-                              for specific classes or choose an amount between £10 - £100
-                            </p>
-													</div>
-													<div class="side-tab-right">
-														<img src="images/workshop.jpeg" alt="person crocheting" width="100%"/>
-                          </div>
-                    <table class='what-on-tabular workshops'>
-                        <thead>
-                          <tr><td>Weekly Groups</td></tr>
-                        </thead>
-                        <tr><td>After school arts and craft session</td><td>Every Thursday</td><td>&pound;8 per session</td><td>3.45pm <br/>(8-11 year olds) or<br/> 4.45pm<br/>(12-17 year olds)</td></tr>
-                        <tr><td>Crochet Circle, for confident beginners/improvers to receive help with a project (BYO project)</td><td>Every Saturday</td><td>&pound;5</td><td>10am - 11am</td></tr>
-                        <tr><td>Handicrafts Group, social group for confident crafters (BYO craft project)</td><td>Every Saturday</td><td>free</td><td>11.15am - 12.15pm</td></tr>
-                    </table>
-                      <h2>Book online</h2>
-                      <script type="text/javascript" src="https://bookeo.com/widget.js?a=42554WYMY6K18ED2B127DD"></script>
-											</div>
-									</div>
-									<!-- end experiment -->
-                  <br/>
-                  <br/>
-
-
-
-                  <h3>Opening times</h3>
-                  <table class="opening-times">
-                    <tr><td>Monday</td><td>Closed</td></tr>
-                    <tr><td>Tuesday</td><td>09:30 - 16:00</td></tr>
-                    <tr><td>Wednesday</td> <td>09:30 - 16:00</td></tr>
-                    <tr><td>Thursday</td>  <td>09:30 - 18:00 (Closes at 4pm during school holidays)</td></tr>
-                    <tr><td>Friday</td>    <td>09:30 - 16:00</td></tr>
-                    <tr><td>Saturday</td>  <td>09:00 - 16:00</td></tr>
-                    <tr><td>Sunday</td>    <td>Closed - Available for workshops</td></tr>
-                  </table>
-
-                </article>
-						</div>
-					</div>
-				</section>
-
-        <!--
-
-        <section id="testimonials">
-          <div class="container">
-            <h3>What our customers say</h3>
-            <div class="testimonial">
-              <p>
-                Lorem ipsom dollar set, free an diller at maus.
-                Lorem ipsom dollar set, free an diller at maus.
-              </p>
-              <sub>Some ace customer</sub>
-            </div>
-            <div class="testimonial">
-              <p>
-                Lorem ipsom dollar set, free an diller at maus.
-                Lorem ipsom dollar set, free an diller at maus.
-                Lorem ipsom dollar set, free an diller at maus.
-              </p>
-              <sub>Some ace customer</sub>
-            </div>
-            <div class="testimonial last">
-              <p>
-                Lorem ipsom dollar set, free an diller at maus.
-                Lorem ipsom dollar set, free an diller at maus.
-              </p>
-              <sub>Some ace customer</sub>
-            </div>
-
-          </div>
-        </section>
-        -->
-        <div class="clear"><!-- --></div>
-
-			<!-- Footer -->
-				<section id="footer">
-					<div class="container">
-						<header>
-							<h2>Get in touch</h2>
-						</header>
-							<div class="col-6 col-12-medium">
-									<div class="row">
-										<div class="col-6 col-12-small">
-											<ul class="icons">
-												<li class="icon solid fa-home">
-													20 The Arcade<br />
-													Barnsley<br />
-                          South Yorkshire<br />
-                          S70 2QN
-												</li>
-                        <li class="icon solid fa-phone">
-                          07421 232131
-                        </li>
-												<li class="icon solid fa-envelope">
-													<a href="mailto:heartofhandmadebarnsley@yahoo.com">heartofhandmadebarnsley@yahoo.com</a>
-												</li>
-											</ul>
-										</div>
-								    <div class="col-6 col-12-small">
-											<ul class="icons">
-												<li class="icon brands fa-instagram">
-													<a href="https://www.instagram.com/heartofhandmade/">instagram.com/heartofhandmade</a>
-												</li>
-												<li class="icon brands fa-facebook-f">
-													<a href="https://www.facebook.com/heartofhandmadebarnsley">facebook.com/heartofhandmadebarnsley</a>
-												</li>
-												<li class="icon brands fa-tiktok">
-													<a href="https://www.tiktok.com/@heartofhandmadebarnsley">tiktok.com/@heartofhandmadebarnsley</a>
-												</li>
-												<li class="icon brands fa-heart">
-													<a href="https://www.kayak.co.uk/Barnsley.9716.guide">Now featured on Kayak</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-                  <div class='gmap-container'>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9480.982710930733!2d-1.480449!3d53.5533817!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48797bc585b0bf37%3A0x7a2fb86b0170311a!2sHeart%20of%20Handmade!5e0!3m2!1sen!2suk!4v1720190592306!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                  </div>
-							</div>
-						</div>
-					<div id="copyright" class="container">
-						<ul class="links">
-							<li>&copy; 2025 Heart of Handmade.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-              <li><a href='https://g.page/r/CRoxcAFruC96EB0/review'>Review us on Google</a><li>
-						</ul>
-					</div>
-				</section>
-
-
-		<!-- Scripts -->
-    <span>
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-    </span>
-
-	</body>
-</html>
+<!-- Opening hours -->
+<section class="hours-section" id="visit">
+  <h2>Opening times</h2>
+  <div class="hours-grid">
+    <div class="hours-row"><span class="day">Monday</span><span class="time">Closed</span></div>
+    <div class="hours-row"><span class="day">Tuesday</span><span class="time">09:30 – 16:00</span></div>
+    <div class="hours-row"><span class="day">Wednesday</span><span class="time">09:30 – 16:00</span></div>
+    <div class="hours-row"><span class="day">Thursday</span><span class="time">09:30 – 18:00</span></div>
+    <div class="hours-row"><span class="day">Friday</span><span class="time">09:30 – 16:00</span></div>
+    <div class="hours-row"><span class="day">Saturday</span><span class="time">09:00 – 16:00</span></div>
+    <div class="hours-row"><span class="day">Sunday</span><span class="time">Closed</span></div>
+  </div>
+  <p class="hours-note">Thursday closes at 4pm during school holidays &nbsp;&bull;&nbsp; Sunday available for workshops</p>
+</section>
