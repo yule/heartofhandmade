@@ -213,7 +213,10 @@ small { font-size: 0.87em; }
   justify-content: center;
 }
 .btn-outline-muted {
-  opacity: 0.5;
+  background: transparent;
+  color: var(--text-muted) !important;
+  border-color: var(--border) !important;
+  opacity: 0.7;
   cursor: default;
 }
 
