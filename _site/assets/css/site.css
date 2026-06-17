@@ -136,7 +136,7 @@ small { font-size: 0.87em; }
   gap: 2rem;
 }
 .nav-logo { display: flex; align-items: center; flex-shrink: 0; }
-.nav-logo img { height: 38px; width: auto; }
+.nav-logo img { height: 38px !important; width: auto !important; max-width: none !important; }
 .nav-links {
   list-style: none;
   display: flex;
