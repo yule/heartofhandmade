@@ -1,6 +1,6 @@
 shop_enabled: false
 
-announcement_enabled: true
+announcement_enabled: false
 announcement_message: "The shop will be closed this Wednesday"
 
 title: Heart of Handmade
