@@ -1,3 +1,14 @@
+(function () {
+  var enquirySelect = document.getElementById('enquiry-type');
+  var messageField  = document.getElementById('message');
+  if (!enquirySelect || !messageField) return;
+  enquirySelect.addEventListener('change', function () {
+    messageField.placeholder = this.value === 'Shelf Space Rental'
+      ? 'Tell us about your business. Include any social media and website links'
+      : 'How can we help?';
+  });
+})();
+
 function dismissBanner() {
   var banner = document.getElementById('announcement-banner');
   if (banner) banner.style.display = 'none';

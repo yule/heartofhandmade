@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Workshops & Events – Heart of Handmade Barnsley</title>
-  <meta name="description" content="Craft workshops and events in Barnsley. Book classes in crochet, sewing, wax painting, ceramics, fused glass and more.">
+  <title>Contact Us – Heart of Handmade Barnsley</title>
+  <meta name="description" content="Get in touch with Heart of Handmade in Barnsley. General enquiries or shelf space rental.">
   <meta name="keywords" content="art,crafts,workshops,gift,gifts,crafting,barnsley,yorkshire,shop,gallery,handmade">
   <meta name="robots" content="index, follow">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="language" content="English">
-  <link rel="canonical" href="http://localhost:4000/workshops.html">
+  <link rel="canonical" href="http://localhost:4000/contact.html">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DFK57F2D10"></script>
@@ -44,10 +44,10 @@
     </button>
     <ul class="nav-links">
       <li><a href="/" >Home</a></li>
-      <li><a href="/workshops.html" class="active">Workshops</a></li>
+      <li><a href="/workshops.html" >Workshops</a></li>
       
       <li><a href="/#visit">Visit Us</a></li>
-      <li><a href="/contact.html" >Contact</a></li>
+      <li><a href="/contact.html" class="active">Contact</a></li>
       <li><a href="/workshops.html#book" class="nav-cta">Book Now</a></li>
     </ul>
   </div>
@@ -57,77 +57,62 @@
   
 
 
-  <!-- Page hero -->
-<div class="page-hero">
+  <div class="page-hero">
   <div class="container">
-    <h1>Workshops &amp; Events</h1>
-    <p>Feeling crafty? Why not spend a relaxing and fun couple of hours learning from expert artists with your choice from our wide selection of workshops</p>
+    <h1>Contact Us</h1>
+    <p>Got a question or interested in renting shelf space? We'd love to hear from you.</p>
   </div>
 </div>
 
-<!-- Bookeo booking widget -->
-<section class="section section-cream" id="book">
+<section class="section section-cream">
   <div class="container">
-    <div class="booking-wrap">
-      <h2>Book online</h2>
-      <script type="text/javascript" src="https://bookeo.com/widget.js?a=42554WYMY6K18ED2B127DD"></script>
-    </div>
-  </div>
-</section>
+    <div class="contact-wrap">
 
-<!-- Weekly sessions -->
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <h2>Weekly Groups</h2>
-    </div>
-    <div class="table-wrap">
-      <table class="schedule-table">
-        <thead>
-          <tr>
-            <th>Session</th>
-            <th>Day</th>
-            <th>Time</th>
-            <th>Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>After school arts and craft session</td>
-            <td>Every Thursday</td>
-            <td>3.45pm (8–11 year olds)<br>4.45pm (12–17 year olds)</td>
-            <td><span class="badge badge-paid">&pound;8 per session</span></td>
-          </tr>
-          <tr>
-            <td>Crochet Circle, for confident beginners/improvers to receive help with a project (BYO project)</td>
-            <td>Every Saturday</td>
-            <td>10am – 11am</td>
-            <td><span class="badge badge-paid">&pound;5</span></td>
-          </tr>
-          <tr>
-            <td>Handicrafts Group, social group for confident crafters (BYO craft project)</td>
-            <td>Every Saturday</td>
-            <td>11.15am – 12.15pm</td>
-            <td><span class="badge badge-free">Free</span></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
+      
 
-<!-- Gift vouchers -->
-<section class="section section-pale">
-  <div class="container">
-    <div style="max-width:640px; margin:0 auto;">
-      <div class="voucher-card">
-        <h3>Looking for the perfect gift?</h3>
-        <p>You can also <strong>buy gift vouchers online</strong> for specific classes or choose an amount between &pound;10 – &pound;100.</p>
-        <a href="https://bookeo.com/go/42554WYMY6K18ED2B127DD/buyvoucher" target="_blank" rel="noopener" class="btn btn-dark">
-          Buy a Gift Voucher
-        </a>
-        <p>Note that online gift vouchers can only be used for online bookings. Physical gift vouchers are available in store.</p>
-      </div>
+      <form class="contact-form" action="https://formspree.io/f/xrevvoav" method="POST">
+
+        <div class="form-group">
+          <label for="enquiry-type">Type of enquiry</label>
+          <div class="select-wrap">
+            <select id="enquiry-type" name="enquiry_type" required>
+              <option value="" disabled selected>Please select…</option>
+              <option value="General Enquiry">General Enquiry</option>
+              <option value="Shelf Space Rental">Shelf Space Rental</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone <span class="optional">(optional)</span></label>
+          <input type="tel" id="phone" name="phone" placeholder="07700 000000">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="How can we help?" required></textarea>
+        </div>
+
+        <input type="hidden" name="_subject" value="New enquiry from heartofhandmade.co.uk">
+        <input type="text" name="_gotcha" style="display:none">
+
+        <button type="submit" class="btn btn-primary">Send Message</button>
+
+      </form>
+
+      
+
     </div>
   </div>
 </section>
