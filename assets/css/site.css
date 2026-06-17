@@ -178,14 +178,10 @@ small { font-size: 0.87em; }
 /* ── Hero ────────────────────────────────────────────────── */
 .hero {
   margin-top: var(--header-total);
-  position: relative;
-  height: 480px;
 }
 .hero-bg {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+  height: auto;
   display: block;
 }
 .hero-intro {
@@ -491,8 +487,8 @@ small { font-size: 0.87em; }
   .nav-toggle { display: block; margin-left: auto; }
 
   .hero { min-height: 480px; }
-  .hero-actions { flex-direction: column; }
-  .hero-actions .btn { width: 100%; text-align: center; }
+  .hero-actions { flex-direction: column; align-items: center; }
+  .hero-actions .btn { width: 100%; text-align: center; max-width: 320px; }
 
   .cards-grid { grid-template-columns: 1fr; }
 
