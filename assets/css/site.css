@@ -29,7 +29,7 @@
 
 /* ── Reset ───────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scroll-padding-top: var(--nav-h); }
 body {
   font-family: var(--font-body);
   font-weight: 400;
@@ -117,8 +117,8 @@ small { font-size: 0.87em; }
 
 /* ── Navigation ──────────────────────────────────────────── */
 .site-nav {
-  position: fixed;
-  top: 0; left: 0; right: 0;
+  position: sticky;
+  top: 0;
   height: var(--nav-h);
   background: var(--white);
   border-bottom: 1px solid var(--border);
@@ -176,9 +176,6 @@ small { font-size: 0.87em; }
 .nav-toggle svg { width: 24px; height: 24px; display: block; }
 
 /* ── Hero ────────────────────────────────────────────────── */
-.hero {
-  margin-top: var(--nav-h);
-}
 .hero-bg {
   width: 100%;
   height: auto;
@@ -222,7 +219,6 @@ small { font-size: 0.87em; }
 
 /* ── Page hero (inner pages) ─────────────────────────────── */
 .page-hero {
-  margin-top: var(--nav-h);
   background: var(--green-pale);
   border-bottom: 1px solid var(--green-light);
   padding: 4.5rem 1.5rem;
@@ -233,7 +229,6 @@ small { font-size: 0.87em; }
 
 /* ── Shop page header ────────────────────────────────────── */
 .shop-head {
-  margin-top: var(--nav-h);
   background: var(--cream);
   border-bottom: 1px solid var(--border);
   padding: 3.5rem 1.5rem;
@@ -458,8 +453,8 @@ small { font-size: 0.87em; }
 
   .nav-links {
     display: none;
-    position: fixed;
-    top: var(--nav-h);
+    position: absolute;
+    top: 100%;
     left: 0; right: 0;
     background: var(--white);
     flex-direction: column;
